@@ -44,11 +44,16 @@ def run(songs)
       play(songs)
     elsif input == "list"
       list(songs)
+    elsif input == "exit"
+      exit_jukebox
+      break
     else
       puts "Invalid entry"
     end
   end
 end
+
+
         
 
 def exit_jukebox
