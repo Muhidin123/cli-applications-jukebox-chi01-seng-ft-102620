@@ -28,7 +28,7 @@ def play(songs)
   if user_input.to_i >= 1 && user_input.to_i <= songs.length
     puts "Playing #{songs[user_input.to_i - 1]}"
   elsif songs.include?(user_input)
-    puts "Playing #{songs.find{|song| song == user_input}}"
+    puts "Playing #{songs.select {|song| song == user_input}}"
   else
     puts "Invalid input, please try again"
   end
@@ -43,7 +43,6 @@ def run(songs)
     when "exit"
       exit_jukebox
       break
-      
     when "play"
       play(songs)
     when "help"
