@@ -39,6 +39,10 @@ def run(songs)
   input = gets.strip
   
   case input
+  
+   when "exit"
+    exit_jukebox
+    break
     
   when "list"
     list(songs)
@@ -46,9 +50,6 @@ def run(songs)
     play
   when "help"
     help
-  when "exit"
-    exit_jukebox
-    break
   end
 end
       
