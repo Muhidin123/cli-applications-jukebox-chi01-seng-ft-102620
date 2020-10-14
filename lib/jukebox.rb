@@ -21,5 +21,8 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index {|songs, index| puts "#{index}. #{songs}"}
+  songs.each_with_index {|songs, index| puts "#{index + 1}. #{songs}"}
 end
+
+def play(songs)
+  puts 
