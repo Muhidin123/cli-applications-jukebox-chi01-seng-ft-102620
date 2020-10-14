@@ -29,7 +29,7 @@ def play(songs)
   user_input = gets.strip
   if user_input.to_i >= 1 && user_input.to_i <= songs.length
     puts "Playing #{songs[user_input.to_i - 1]}"
-  elsif user_input ==
+  elsif songs(include?)
 
 
 def exit_jukebox
