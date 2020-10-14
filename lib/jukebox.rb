@@ -24,12 +24,6 @@ def list(songs)
   songs.each_with_index {|songs, index| puts "#{index + 1}. #{songs}"}
 end
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  user_input = gets.strip
-  if user_input == songs
-  end
-end
 
 def exit_jukebox
   puts "goodbye"
