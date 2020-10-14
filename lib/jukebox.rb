@@ -32,7 +32,11 @@ def play(songs)
   elsif songs.include?(user_input)
     puts "Playing #{songs.find{|song| song == user_input}}"
   else
-    puts 
+    puts "Invalid input, please try again"
+  end
+end
+
+
 
 
 def exit_jukebox
