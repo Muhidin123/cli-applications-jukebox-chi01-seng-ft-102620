@@ -26,5 +26,5 @@ end
 
 
 def exit_jukebox
-  puts "goodbye"
+  puts "Goodbye"
 end
