@@ -46,10 +46,14 @@ def run(songs)
       
       when "list"
         list(songs)
-    when "play"
-      play
-    when "help"
-      help
+      when "play"
+       play
+      when "help"
+        help
+      end
+    end
+  end
+end
 
 def exit_jukebox
   puts "Goodbye"
