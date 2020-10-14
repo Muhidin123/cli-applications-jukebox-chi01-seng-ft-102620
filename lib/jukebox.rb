@@ -25,4 +25,12 @@ def list(songs)
 end
 
 def play(songs)
-  puts 
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
+  if user_input == songs
+  end
+end
+
+def exit_jukebox
+  puts "goodbye"
+end
