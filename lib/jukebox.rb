@@ -42,7 +42,7 @@ def run(songs)
   
    when "exit"
     exit_jukebox
-    break
+      break
     when "list"
     list(songs)
     when "play"
