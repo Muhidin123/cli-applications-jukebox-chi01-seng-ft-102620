@@ -40,15 +40,16 @@ def run(songs)
     input = gets.chomp
     
     case input
-    when "exit"
-      exit_jukebox
-      break
+    
     when "play"
       play(songs)
     when "help"
       help
     when "list"
       list(songs)
+    when "exit"
+      exit_jukebox
+      break
     else
       puts "Invalid entry"
     end
